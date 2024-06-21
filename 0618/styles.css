@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+
+html, body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    background-color: #0F0F0F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #6B6B6B;
+    padding: 10px 80px;
+    position: fixed;
+    width: 100%;
+    max-width: 1440px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+header img {
+    width: 10%;
+}
+
+header nav {
+    display: flex;
+    flex-grow: 1;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0 100px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #FFA500; /* 주황색 배경 */
+    color: white; /* 흰색 글씨 */
+}
+
+header nav ul li a::before {
+    content: '';
+    display: block;
+    width: 3.5px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    left: -5px; /* Adjusted for 3px left margin + width of the rectangle */
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+main {
+    padding-top: 25px; /* Adjusted for fixed header */
+    flex-grow: 1;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-text{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 60px;
+    position: absolute;
+    top: 40px;
+    line-height: 1.55;
+    left: 240px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.main-text02 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 57.5px;
+    line-height: 1.55;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 230px;
+    margin-left: 680px; /* 내부 여백으로 변경 */
+}
+
+.highlight {
+    color: #94FAFD; /* 추가된 텍스트 컬러 */
+}
+
+.highlight02 {
+    color: #ffd000; /* 추가된 텍스트 컬러 */
+}
+
+.main-content .main-text-overlay {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    bottom: 20px;
+    left: 20x;
+    color: white;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    width: 80%; /* 중앙 정렬을 위해 너비를 지정합니다. 필요에 따라 조정하세요 */
+}
+
+.side-content, .additional-content {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.image-container01 {
+
+    font-weight: 900;
+    position: relative;
+}
+
+.image-container02 {
+    float: right;
+    margin-right: 20px;
+    width: calc(100% - 20px); /* 오른쪽에서 20px 떨어지도록 설정 */
+    position: relative;
+}
+
+.text-center02 {
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    float: right;
+    margin-right: 20px;
+    width: calc(100% - 0px); /* 오른쪽에서 20px 떨어지도록 설정 */
+    position: relative;
+}
+
+.additional-content {
+    margin-top: 700px; /* 추가된 부분: 위 section과의 간격 설정 */
+}
+
+.additional-content .image-container01 img {
+    width: 2%; /* 이미지 크기 줄이기 */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* 이미지 중앙 정렬 */
+}
+
+.additional-content .image-container01 img {
+    width: 1; /* 추가된 부분: 이미지 크기 줄이기 */
+    height: auto;
+}
+
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.right-aligned-section {
+    float: right;
+    margin-right: 20px;
+    width: calc(100% - 20px); /* 오른쪽에서 20px 떨어지도록 설정 */
+}
+
+footer {
+    background-color: #6B6B6B;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 1440px;
+    height: 10vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+::selection {
+    background-color: #FFA500;
+    color: white;
+}
